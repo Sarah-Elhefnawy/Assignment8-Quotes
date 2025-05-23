@@ -1,0 +1,28 @@
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.btn {
+    --bs-btn-padding-x: 5.75rem;
+    --bs-btn-padding-y: 1.75rem;
+    --bs-btn-font-family: Arial, Helvetica, sans-serif;
+    --bs-btn-font-size: 13.33333px;
+    --bs-btn-font-weight: 400;
+    background-color: blue;
+    --bs-btn-border-width: 2px;
+    --bs-btn-border-color: #545454;
+    --bs-btn-hover-border-color: #545454;
+    --bs-btn-border-radius: none;
+}
+
+button.btn:hover {
+    background-color: #008000;
+}
