@@ -1,28 +1,81 @@
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 80px;
-    font-weight: 700;
+/* Start of General CSS */
+:root {
+    --bs-border-radius: 0;
+    --bs-btn-font-family: Arial, Helvetica, sans-serif;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #5D1624;
+    --bs-btn-font-size: 13.33333px;
+    --bs-btn-font-weight: 400;
+    --main-textColor: #1C130F;
 }
 
-p {
+.text-color {
+    color: var(--main-textColor);
+}
+
+/* Start of header */
+.header {
+    background-image: url(./../images/xisotd01b.jpg.pagespeed.ic.Fs5rLO91ni.webp);
+    background-repeat: no-repeat;
+    background-position: 75% 0%;
+    background-size: cover;
+}
+
+.header .inner {
+    width: 65%;
+    height: 100%;
+    background-image: url(./../images/xiotd-white-logo-home.png.pagespeed.ic.bRi0-OmlOL.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 0%;
+    z-index: 22;
+    position: absolute;
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+}
+
+/* Start of random */
+.random h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 500;
+}
+
+.random p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
+    font-size: 1.4375rem;
     font-weight: 400;
 }
 
-.btn {
+.random .btn-random {
     --bs-btn-padding-x: 5.75rem;
     --bs-btn-padding-y: 1.75rem;
-    --bs-btn-font-family: Arial, Helvetica, sans-serif;
-    --bs-btn-font-size: 13.33333px;
-    --bs-btn-font-weight: 400;
-    background-color: blue;
+    --bs-btn-bg: #44608F;
+    --bs-btn-color: white;
     --bs-btn-border-width: 2px;
     --bs-btn-border-color: #545454;
     --bs-btn-hover-border-color: #545454;
-    --bs-btn-border-radius: none;
 }
 
-button.btn:hover {
-    background-color: #008000;
+/* Start of gmail */
+.gmail {
+    background-color: #f1f3f7;
+}
+
+.gmail .btn-gmail {
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 0.75rem;
+    --bs-btn-bg: #44608F;
+    --bs-btn-color: white;
+    --bs-btn-border-color: #545454;
+    --bs-btn-hover-border-color: #545454;
+}
+
+.gmail h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5625rem;
+    font-weight: 400;
 }

@@ -1,0 +1,7 @@
+/* Responsive */
+/* md */
+@media (min-width: 768px) {
+    .header .inner {
+        width: 40%;
+    }
+}

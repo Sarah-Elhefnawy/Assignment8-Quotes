@@ -7,24 +7,53 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>Quotes App</title>
 </head>
 
 <body>
-    <div class="py-5">
-        <div class="inner text-center mx-auto text-black">
-            <h1>Quote of the Day</h1>
-            <p>Press the button below to recieve a random quote!</p>
-            <button type="button" id="demo" class="btn text-white">New Quote</button>
-            <blockquote cite='https://www.goodreads.com/quotes'>
-                <p id="quote-text"></p>
-                <footer>
-                    <p id="quote-author"></p>
-                    <cite id="cite" class="d-none">goodreads.com</cite>
-                </footer>
-            </blockquote>
+    <header class="header py-5 min-vh-100 d-flex align-items-center justify-content-start">
+        <div class="container">
+            <div class="inner"></div>
         </div>
-    </div>
+    </header>
+    <main>
+        <section class="random py-5">
+            <div class="container">
+                    <div class="inner text-center mx-auto text-color">
+                        <h2>Quote of the Day</h2>
+                        <p>Press the button below to recieve a random quote!</p>
+                        <button type="button" id="demo" class="btn btn-random mb-3">New Quote</button>
+                        <blockquote cite='https://www.goodreads.com/quotes' class="mb-0">
+                            <p id="quote-text"></p>
+                            <footer>
+                                <p id="quote-author"></p>
+                                <cite id="cite" class="d-none">goodreads.com</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+            </div>
+        </section>
+        <section class="gmail py-5">
+            <div class="container">
+                <h2 class="text-main">Receive daily insight and inspiration right in your inbox for FREE.</h2>
+                <form class="row justify-content-center align-items-center g-4 mt-1">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" placeholder="xxx@gmail.com">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-gmail">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>
